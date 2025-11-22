@@ -1,4 +1,4 @@
-                  ###_1
+                  #___1
 def mijoz_info(ism,familya,tugilgan_yil,joyi,gmil='',raqam=''):
     info={'ism':ism,
           'familya':familya,
@@ -25,11 +25,11 @@ for mijoz in mijozlar:
     print(f"{mijoz['ism'].title()} {mijoz['familya'].title()}"
           f"{mijoz['tugilgan_yil']} yoshda , telefoni: {mijoz['raqam']}")
 
-                   ##_3
+                   #___3
 def eng_katta(a,b,c):
     return max(a,b,c)
 print(eng_katta(7,8,8))
-              #_4
+                   #___4
 def aylana(radius,pi=3.14):
     info={'radius':radius,
           'diametr':2*radius,
@@ -38,7 +38,7 @@ def aylana(radius,pi=3.14):
     return info
 a=aylana(5)
 print(a)
-                     ##_5
+                     #___5
 def tub_sonlar(min,max):
     tublar=[]
     for i in range(min,max+1):
@@ -53,7 +53,7 @@ def tub_sonlar(min,max):
     return tublar
 print(tub_sonlar(2,50))
 
-                     ##_6
+                     #___6
 def fibanachi(n):
     fib=[]
     a,b=0,1
