@@ -19,6 +19,7 @@ def son(*sonlar):
 print(son(1, 2, 23))
 
 def talaba(ismi,familyasi,**kvargs):
+    """royhatdagi ismlarni bosh harfini katta bilan yozadigan funksiya"""
     kvargs['ismi']=ismi
     kvargs['familyasi']=familyasi
     return kvargs
