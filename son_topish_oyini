@@ -1,0 +1,54 @@
+print('keling siz bilan son topish oyinini oynaymiz'
+      '1 dan 10 gacha ixtiyoriy son kiriting...')
+import random as r
+son=r.randint(1,10)
+count=1
+while True:
+    a=int(input('tahminingizni kiriting:'))
+    if a < 1 or a > 10:
+        print("1 dan 10 gacha son kiriting!")
+        continue
+    if son==a:
+        print(f"\nbarakallo siz {count}-urinishda topdingiz\n")
+        break
+    elif son<a:
+        print('men oylagan son bundan kichik')
+    elif son>a:
+        print('men oylagan son bundan katta')
+    count+=1
+
+print('endi men topaman 1 dan 10 gacha son oylang')
+input('biror son oylagan bolsangiz ixtiyoriy tugmani bosing:')
+
+max=10
+min=1
+
+import random as e
+qadam=1
+while True:
+    if min > max:
+        print("Aldamang , kimni aldayabsiz !")
+        break
+    tahmin = e.randint(min, max)
+    print(f'menimcha siz {tahmin} sonini oyladingiz')
+    javob=input("togri ='T' , bundan katta ='+' , bundan kichik='-' :")
+
+    if javob == "+":
+        min=tahmin+1
+    elif javob == "-":
+        max=tahmin-1
+    elif javob.upper()=='T':
+        print(f'men {qadam}-urinishda topdim')
+        if count > qadam:
+            print("Umumiy hisobda MEN yutdim!")
+        elif count < qadam:
+            print("Siz yutdingiz! ")
+        else:
+            print("Durang bo'ldi! ")
+        break
+    else:
+        print("Faqat T, + yoki - ni kiriting!")
+        continue
+
+    qadam += 1
+
